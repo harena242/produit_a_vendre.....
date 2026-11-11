@@ -1,0 +1,91 @@
+/* ajout_produit.css : style de la page "Ajouter un produit" */
+
+:root {
+    --couleur-accent: #2563eb;
+    --couleur-accent-fonce: #1d4ed8;
+    --couleur-texte: #1f2937;
+    --couleur-fond: #f9fafb;
+    --couleur-bordure: #d1d5db;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--couleur-texte);
+    background: var(--couleur-fond);
+}
+
+/* Lien de retour */
+.retour {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--couleur-accent);
+    text-decoration: none;
+}
+
+.retour:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Le formulaire est une carte blanche centrée */
+form {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--couleur-accent);
+}
+
+input[type="file"] {
+    margin-top: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--couleur-accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--couleur-accent-fonce);
+}

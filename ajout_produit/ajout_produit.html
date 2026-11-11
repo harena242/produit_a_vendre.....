@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ajout_produit.css">
+    <title>Ajouter un produit</title>
+</head>
+<body>
+    <a href="../accueil/accueil.html">retour a l'accueil</a>
+    <h1>Ajouter un produit à vendre</h1>
+
+    <!-- enctype="multipart/form-data" est obligatoire pour envoyer une photo -->
+    <form action="ajout_produit.php" method="POST" enctype="multipart/form-data">
+
+        <p>
+            <label>Titre du produit :</label><br>
+            <input type="text" name="titre" required>
+        </p>
+
+        <p>
+            <label>Description :</label><br>
+            <textarea name="description" rows="5" cols="40" required></textarea>
+        </p>
+
+        <p>
+            <label>Prix :</label><br>
+            <input type="number" name="prix" step="0.01" min="0" required>
+        </p>
+
+        <p>
+            <label>Photo :</label><br>
+            <input type="file" name="photo" accept="image/*" required>
+        </p>
+
+        <p>
+            <button type="submit">Publier</button>
+        </p>
+
+    </form>
+
+</body>
+</html>

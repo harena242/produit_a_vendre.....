@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="tous_produit.css">
+    <title>Tous les produits</title>
+</head>
+<body>
+    <a href="../accueil/accueil.html">retour a l'accueil</a>
+    <h1>Produits à vendre</h1>
+
+    <!-- Formulaire de recherche par titre.
+         Le résultat s'affiche dans le cadre "resultats" ci-dessous -->
+    <form action="tout_produit_recherche.php" method="GET" target="resultats">
+        <input type="text" name="titre" placeholder="Rechercher un titre" required>
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <p>
+        <!-- Pour revoir tous les produits après une recherche -->
+        <a href="tout_produit.php" target="resultats">Afficher tous les produits</a>
+    </p>
+
+    <!-- Ce cadre affiche d'abord tous les produits (tout_produit.php),
+         puis le résultat de la recherche quand on clique sur Rechercher -->
+    <iframe name="resultats" src="tout_produit.php" width="100%" height="600"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* tout_produit.css : style de la page "Tous les produits" */
+
+:root {
+    --couleur-accent: #2563eb;
+    --couleur-accent-fonce: #1d4ed8;
+    --couleur-texte: #1f2937;
+    --couleur-fond: #f9fafb;
+    --couleur-bordure: #d1d5db;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--couleur-texte);
+    background: var(--couleur-fond);
+}
+
+/* Lien de retour */
+.retour {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--couleur-accent);
+    text-decoration: none;
+}
+
+.retour:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Formulaire de recherche : champ + bouton sur la même ligne */
+form {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto 12px auto;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--couleur-accent);
+}
+
+button {
+    padding: 10px 20px;
+    background: var(--couleur-accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--couleur-accent-fonce);
+}
+
+/* Lien "Afficher tous les produits" */
+.tous {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tous a {
+    color: var(--couleur-accent);
+    text-decoration: none;
+}
+
+.tous a:hover {
+    text-decoration: underline;
+}
+
+/* Le cadre qui affiche les résultats */
+iframe {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 12px;
+}

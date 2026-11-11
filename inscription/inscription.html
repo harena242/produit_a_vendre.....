@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="inscription.css">
+    <title>Inscription</title>
+</head>
+<body>
+
+    <h1>Inscription</h1>
+
+    <!-- Formulaire d'inscription -->
+    <form action="inscription.php" method="POST">
+
+        <p>
+            <label>Nom d'utilisateur :</label><br>
+            <input type="text" name="nom" required>
+        </p>
+
+        <p>
+            <label>Téléphone :</label><br>
+            <input type="tel" name="telephone" required>
+        </p>
+
+        <p>
+            <label>E-mail :</label><br>
+            <input type="email" name="email" required>
+        </p>
+
+        <p>
+            <label>Mot de passe :</label><br>
+            <input type="password" name="mot_de_passe" minlength="6" required>
+        </p>
+
+        <p>
+            <button type="submit">S'inscrire</button>
+        </p>
+
+    </form>
+
+    <!-- Pour ceux qui ont déjà un compte -->
+    <p>Déjà un compte ?</p>
+    <form action="../connexion/connexion.html" method="GET">
+        <button type="submit">Connexion</button>
+    </form>
+
+</body>
+</html>

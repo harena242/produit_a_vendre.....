@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="connexion.css">
+    <title>Connexion</title>
+</head>
+<body>
+
+    <h1>Connexion</h1>
+
+    <!-- Formulaire de connexion -->
+    <form action="connexion.php" method="POST">
+
+        <p>
+            <label>E-mail :</label><br>
+            <input type="email" name="email" required>
+        </p>
+
+        <p>
+            <label>Mot de passe :</label><br>
+            <input type="password" name="mot_de_passe" required>
+        </p>
+
+        <p>
+            <button type="submit">Connexion</button>
+        </p>
+
+    </form>
+
+    <!-- Bouton pour aller à la page d'inscription -->
+    <form action="../inscription/inscription.html" method="GET">
+        <button type="submit">S'inscrire</button>
+    </form>
+
+</body>
+</html>
